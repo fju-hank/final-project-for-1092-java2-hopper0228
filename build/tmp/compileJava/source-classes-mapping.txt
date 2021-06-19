@@ -1,2 +1,12 @@
+com/fju/Box3.java
+ com.fju.Box3
+com/fju/Box.java
+ com.fju.Box
+com/fju/Box1.java
+ com.fju.Box1
+com/fju/Box4.java
+ com.fju.Box4
+com/fju/Box2.java
+ com.fju.Box2
 com/fju/Tester.java
  com.fju.Tester
