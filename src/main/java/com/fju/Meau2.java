@@ -1,7 +1,7 @@
 package com.fju;
 
-public class Box2 extends Box{
-    public Box2(){
+public class Meau2 extends Meau {
+    public Meau2(){
         id = 2;
         name = "beef Bento";
         price = 260;

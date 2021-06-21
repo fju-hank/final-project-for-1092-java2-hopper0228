@@ -1,6 +1,6 @@
 package com.fju;
 
-public class Box {
+public class Meau {
     int id;
     String name;
     int price;
