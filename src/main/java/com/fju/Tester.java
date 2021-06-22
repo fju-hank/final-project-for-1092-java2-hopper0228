@@ -8,9 +8,9 @@ public class Tester {
             int count;
             int id;
             int addfood=1;
-            int end;
+            int bill;
             int ordercount=0,lastcount=0;
-            int [][] a = new int[100][100];
+            int [][] order = new int[100][100];
             Meau[] meaus = new Meau[4];
             meaus[0] = new Meau1();
             meaus[1] = new Meau2();
@@ -31,8 +31,8 @@ public class Tester {
                 id = scan.nextInt();
                 count = scan.nextInt();
                 ordercount++;
-                a[ordercount][0]=id;
-                a[ordercount][1]=count;
+                order[ordercount][0]=id;
+                order[ordercount][1]=count;
                 for(Meau meau : meaus)
                 {
                     if(id == meau.id)
@@ -54,17 +54,17 @@ public class Tester {
             {
                 for(Meau meau : meaus)
                 {
-                    if(a[i][0]== meau.id)
+                    if(order[i][0]== meau.id)
                     {
-                        System.out.println(meau.name+"*"+a[i][1]);
+                        System.out.println(meau.name+"*"+order[i][1]);
                     }
                 }
             }
             System.out.println("total money : "+total);
             System.out.println("====================");
             System.out.println("To confirm the checkout, please press 1\nTo discard the bill,please press 4");
-            end = scan.nextInt();
-            if(end==1)
+            bill = scan.nextInt();
+            if(bill==1)
             {
                 System.out.println("====================");
                 System.out.println("Your order has been received, please wait while the meal is being prepared");
